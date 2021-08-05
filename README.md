@@ -2,7 +2,7 @@
 
 ---
 ---
-###Description
+### Description
 
 ---
 >This Endpoint `/solution/` can be used to calculate the distance between two 
@@ -15,12 +15,12 @@
 >- Δ is delta. i.e the difference between 2 values.
 > Note that angles need to be in radians to pass trig functions in the formula. PI = 3.142
 
-> ####Parameters required for endpoint:
+> ### Parameters required for endpoint:
 + longitude1 --> (is the longitude of the first user)
 + latitude1 --> (is the latitude of the first user)
 + longitude2 --> (is the longitude of the second user)
 + latitude2 --> (is the longitude of the second user)
-> ##response example 
+> ### Response example 
 > #### Request: curl -X GET “http://solution-staging.herokuapp.com/solution/?latitude1=55&longitude1=42&latitude2=33&longitude2=89
 >#### expected response: “4366.44 km”
 >Format: response is rounded up to 2 decimal places
