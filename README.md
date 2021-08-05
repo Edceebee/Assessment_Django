@@ -14,7 +14,7 @@
 >- R is earth’s radius (mean radius = 6,371km);
 >- Δ is delta. i.e the difference between 2 values.
 > Note that angles need to be in radians to pass trig functions in the formula. PI = 3.142
-####Parameters required for endpoint:
+> ####Parameters required for endpoint:
 + longitude1 --> (is the longitude of the first user)
 + latitude1 --> (is the latitude of the first user)
 + longitude2 --> (is the longitude of the second user)
