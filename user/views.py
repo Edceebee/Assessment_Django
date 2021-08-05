@@ -32,13 +32,24 @@ class distance_view(views.APIView):
 def calculate_distance(lat1, long1, lat2, long2):
     test = [lat1, long1, lat2, long2]
     converted = []
-    for t in test:
+    for i, t in enumerate(test):
+        print(t, i)
+        value = ''
+        if i == 0:
+            value = 'latitude1'
+        elif i ==1:
+            value = 'longitude1'
+        elif i ==2:
+            value = 'latitude2'
+        elif i == 3:
+            value = 'longitude2'
+
         try:
-            test.append(int(t))
+            converted.append(int(t))
         except ValueError:
             raise ValueError(f"{t} is an invalid number")
         except TypeError:
-            raise TypeError(f"{test} {t} --> cannot be empty ")
+            raise TypeError(f"{test} {value} --> cannot be empty ")
 
     lat1 = math.radians(int(lat1))
     long1 = math.radians(int(long1))
@@ -49,5 +60,3 @@ def calculate_distance(lat1, long1, lat2, long2):
     distance = earthRadius * acos(sin(lat1) * sin(lat2) + cos(lat1) * cos(lat2) * cos(long1 - long2))
     new_distance = str(round(distance, 2))
     return f"{new_distance}km"
-
-
