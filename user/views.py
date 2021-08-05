@@ -49,7 +49,7 @@ def calculate_distance(lat1, long1, lat2, long2):
         except ValueError:
             raise ValueError(f"{t} is an invalid number")
         except TypeError:
-            raise TypeError(f"{test} {value} --> cannot be empty ")
+            raise TypeError(f"{test} {value} --> is missing ")
 
     lat1 = math.radians(int(lat1))
     long1 = math.radians(int(long1))
