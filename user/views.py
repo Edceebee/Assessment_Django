@@ -37,9 +37,9 @@ def calculate_distance(lat1, long1, lat2, long2):
         value = ''
         if i == 0:
             value = 'latitude1'
-        elif i ==1:
+        elif i == 1:
             value = 'longitude1'
-        elif i ==2:
+        elif i == 2:
             value = 'latitude2'
         elif i == 3:
             value = 'longitude2'
