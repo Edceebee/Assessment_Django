@@ -20,7 +20,7 @@
 + longitude2 --> (is the longitude of the second user)
 + latitude2 --> (is the longitude of the second user)
 > ##response example 
-> #### Request: curl -X GET “http://solution/?latitude1=55&longitude1=42&latitude2=33&longitude2=89”
+> #### Request: curl -X GET “http://solution-staging.herokuapp.com/solution/?latitude1=55&longitude1=42&latitude2=33&longitude2=89
 >#### expected response: “4366.44 km”
 >Format: response is rounded up to 2 decimal places
 
